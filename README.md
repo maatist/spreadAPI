@@ -27,6 +27,7 @@ docker build -t yourproject .
 ```bash
 docker run -p 4000:4000 yourproject
 ```
+Ingresar a [localhost](http://localhost:4000/) para verificar el funcionamiento y ver la documentacion de la api
 
 ## Tests
 ### Opcion 1
