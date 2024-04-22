@@ -1,10 +1,6 @@
 FROM python:3.12.3-slim
 
-# Set the working directory
-
 WORKDIR /spreadAPI
-
-# Copy the current directory contents into the container at /spreadAPI
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
