@@ -32,7 +32,7 @@ class SetSpread(Resource):
         spread_alert = args['spread']
         return {'mensaje': f'Spread de alerta establecido en {spread_alert}'}
 
-@api.route('/getVerifiedSpread')
+@api.route('/spreadPolling')
 class SpreadPolling(Resource):
     @api.doc('get_spread_alert')
     def get(self):

@@ -26,16 +26,9 @@ def test_get_spreads_alert_no_alert():
 
 def test_set_spread():
     args = {'spread': 1000.0}
-
-    # Usa patch para simular la llamada a parser.parse_args()
     with patch('app.routes.parser.parse_args', return_value=args):
-        # Crea una instancia de tu clase
         instance = SetSpread()
-
-        # Llama al método post
         result = instance.post()
-
-    # Verifica que el resultado es el esperado
     assert result == {'mensaje': f'Spread de alerta establecido en {args["spread"]}'}
 
 def test_get_spread():
